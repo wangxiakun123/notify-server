@@ -51,7 +51,7 @@ class API {
 
   // 天气
   async getWeather(city_name: string): Promise<IWeatherResponseProps> {
-    const res = await getTian({ url: LoveMsgURL.weather, params: { city: city_name } })
+    const res = await getTian({ url: LoveMsgURL.weather, params: { city: city_name,key:"331468638b2717f478bc048fd46fe3fd" } })
     console.log(res)
     return res?.[0]
   }
