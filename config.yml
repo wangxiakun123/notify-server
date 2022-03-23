@@ -16,6 +16,6 @@ loveMsg:
   weather_tips: true
   # 极端天气温度提醒（默认开启）
   # 卡片内容字节限制可能显示不完全
-  weather_tem: true
+  weather_tem: false
   # 农历信息（默认开启）
   date_lunarInfo: true

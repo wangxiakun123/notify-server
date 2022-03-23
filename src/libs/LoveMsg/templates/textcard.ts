@@ -47,8 +47,12 @@ export const textCardTemplate = (data: TextCardTemplateProps) => {
 
     description += ` ${festival_info}
 农历 | ${lubarmonth}${lunarday} ${lunar_festival_info} ${jieqi_info}`
+let birthday=`${lubarmonth}${lunarday}`
+if(birthday=='四月十四'){
+  //这是儿子的生日
+  description += `\n儿子今天是你的生日哇，再忙也不要忘记今天，生日快乐啦`
+}
   }
-
   description += `\n今日天气状况：
 天气：${weather}
 ${wind}：${windsc}
@@ -84,8 +88,8 @@ ${CONFIG.girl_name}可要注意保暖哦~\n`
   //   }
 
   // 内容末尾，自定义
-  description += `
-  [ 点我有惊喜 ] ❤️ 🧡 💛 💚 💖`
+  // description += `
+  // [ 点我有惊喜 ] ❤️ 🧡 💛 💚 💖`
 
   const title = `这是baba督促你的第 ${dateLength} 天`
 
@@ -96,7 +100,7 @@ ${CONFIG.girl_name}可要注意保暖哦~\n`
       description,
       //   url: 'https://api.lovelive.tools/api/SweetNothings',
       //   url: 'https://v1.jinrishici.com/all.svg',
-      url: `${CONFIG.card_url}`, // 60s看世界
+      // url: `${CONFIG.card_url}`, // 60s看世界
       btntxt: `By${CONFIG.boy_name}`,
     },
   }

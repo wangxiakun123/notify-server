@@ -19,7 +19,7 @@ export const textTemplate = (data: TextTemplateProps) => {
   else {
 
 text += `
-今天可是${week}，不要忘记学习,奥利给。~\n`
+今天可是${week}，不要忘记学习,奥利给~\n`
   }
 
   // 添加笑话
@@ -41,15 +41,15 @@ text += `
 『${songLyrics.source}』${songLyrics.content}\n`
   }
 
-  if (oneMagazines) {
-    text += `
-『ONE杂志』${oneMagazines.word}\n`
-  }
+//   if (oneMagazines) {
+//     text += `
+// 『ONE杂志』${oneMagazines.word}\n`
+//   }
 
-  if (netEaseCloud) {
-    text += `
-『网易云音乐热评』${netEaseCloud.content}——${netEaseCloud.source}\n`
-  }
+//   if (netEaseCloud) {
+//     text += `
+// 『网易云音乐热评』${netEaseCloud.content}——${netEaseCloud.source}\n`
+//   }
 
   // 添加一句一言
   if (oneWord) {
