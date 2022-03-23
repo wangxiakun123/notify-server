@@ -100,8 +100,7 @@ ${CONFIG.girl_name}可要注意保暖哦~\n`
       description,
       //   url: 'https://api.lovelive.tools/api/SweetNothings',
       //   url: 'https://v1.jinrishici.com/all.svg',
-      url:"",
-      // url: `${CONFIG.card_url}`, // 60s看世界
+      url: `${CONFIG.card_url}`, // 60s看世界
       btntxt: `By${CONFIG.boy_name}`,
     },
   }
