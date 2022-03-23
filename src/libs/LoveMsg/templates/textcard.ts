@@ -48,7 +48,7 @@ export const textCardTemplate = (data: TextCardTemplateProps) => {
     description += ` ${festival_info}
 农历 | ${lubarmonth}${lunarday} ${lunar_festival_info} ${jieqi_info}`
 let birthday=`${lubarmonth}${lunarday}`
-if(true){
+if(birthday=='四月十四'){
   //这是儿子的生日
   description += `\n儿子今天是你的生日哇，再忙也不要忘记今天，生日快乐啦`
 }
