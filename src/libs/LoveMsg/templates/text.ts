@@ -19,7 +19,7 @@ export const textTemplate = (data: TextTemplateProps) => {
   else {
 
 text += `
-今天可是${week}，不要忘记学习,加油,奥利给~\n`
+今天可是${week}，不要忘记学习,加油,奥利给~\n代码时间很枯燥的事情 保持耐心。\n`
   }
 
   // 添加笑话
