@@ -19,7 +19,7 @@ export const textTemplate = (data: TextTemplateProps) => {
   else {
 
 text += `
-今天可是${week}，不要忘记学习,加油,奥利给~\n代码是个很枯燥的事情 保持耐心。\n`
+今天可是${week}，不要忘记学习,加油,奥利给~\n学习是件很枯燥的事情 保持耐心。\n`
   }
 
   // 添加笑话
@@ -60,7 +60,7 @@ text += `
   // 每日英语
   if (dayEnglish) {
     text += `
-『每日英语（${dayjs(dayEnglish.date).format('ll')}』${dayEnglish.content}`
+『每日英语』${dayEnglish.content}`
   }
 
   return {
