@@ -6,6 +6,7 @@ import API from '../../api/loveMsg'
 import { getConfig } from '../../utils/getConfig'
 import { wxNotify } from '../WxNotify'
 import { textTemplate } from './templates/text'
+import { textTemplatePush } from './templates/punch'
 import { textCardTemplate } from './templates/textcard'
 
 const CONFIG = getConfig().loveMsg
@@ -48,6 +49,10 @@ const goodWord = async () => {
   }
 }
 
+const punch=async () => {
+  const template = textTemplatePush()
+  await wxNotify(template)
+}
 // 天气信息
 const weatherInfo = async () => {
   try {
@@ -67,6 +72,15 @@ const weatherInfo = async () => {
 
 // goodMorning
 export const goodMorning = async () => {
-  await weatherInfo()
-  await goodWord()
+  let date = new Date();
+  let hour = date.getHours();
+  if((hour>=8&&hour<=9)){
+    await weatherInfo()
+    await goodWord()
+    await punch()
+  }else if(true){
+    //(hour>=12&&hour<=13)||(hour>=17&&hour<=19)||(hour>=21&&hour<=22)
+    await punch()
+  }
+
 }
