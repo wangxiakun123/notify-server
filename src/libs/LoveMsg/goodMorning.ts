@@ -74,7 +74,7 @@ const weatherInfo = async () => {
 export const goodMorning = async () => {
   let date = new Date();
   let hour = date.getHours();
-  if((hour>=8&&hour<=9)){
+  if((hour<=4)){
     await weatherInfo()
     await goodWord()
     await punch()
