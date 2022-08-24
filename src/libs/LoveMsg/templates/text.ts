@@ -8,19 +8,19 @@ import dayjs, { weekToday } from '../../../utils/dayjs'
 export const textTemplate = (data: TextTemplateProps) => {
   const { caiHongpi, sayLove, songLyrics, oneMagazines, netEaseCloud, oneWord, dayEnglish } = data
 
-  let text = '滴滴滴,儿子儿子~\n'
+  let text = '滴滴滴,儿子儿子~\n每日诗句,热评和英语更新喽'
 
   // 工作日/休息日，需要排除节假日
-  const week = weekToday()
-  if (['星期六', '星期日'].includes(week)) {
-    text += `
-今天是${week}，可以不用学习,难得的周末,好好放松。\n`
-  }
-  else {
+//   const week = weekToday()
+//   if (['星期六', '星期日'].includes(week)) {
+//     text += `
+// 今天是${week}，可以不用学习,难得的周末,好好放松。\n`
+//   }
+//   else {
 
-text += `
-今天可是${week}，不要忘记学习,加油,奥利给~\n学习是件很枯燥的事情 保持耐心。\n`
-  }
+// text += `
+// 今天可是${week}，不要忘记学习,加油,奥利给~\n学习是件很枯燥的事情 保持耐心。\n`
+//   }
 
   // 添加笑话
 //   if (caiHongpi) {
